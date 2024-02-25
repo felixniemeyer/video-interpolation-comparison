@@ -1,0 +1,1756 @@
+{
+  "last_node_id": 47,
+  "last_link_id": 56,
+  "nodes": [
+    {
+      "id": 11,
+      "type": "GMFSS Fortuna VFI",
+      "pos": [
+        711,
+        -2296
+      ],
+      "size": {
+        "0": 443.4000244140625,
+        "1": 150
+      },
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "frames",
+          "type": "IMAGE",
+          "link": 9
+        },
+        {
+          "name": "optional_interpolation_states",
+          "type": "INTERPOLATION_STATES",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            11
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GMFSS Fortuna VFI"
+      },
+      "widgets_values": [
+        "GMFSS_fortuna_union",
+        10,
+        4,
+        true
+      ]
+    },
+    {
+      "id": 15,
+      "type": "IFRNet VFI",
+      "pos": [
+        703,
+        -1655
+      ],
+      "size": {
+        "0": 443.4000244140625,
+        "1": 174
+      },
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "frames",
+          "type": "IMAGE",
+          "link": 12
+        },
+        {
+          "name": "optional_interpolation_states",
+          "type": "INTERPOLATION_STATES",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            14
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "IFRNet VFI"
+      },
+      "widgets_values": [
+        "IFRNet_S_Vimeo90K.pth",
+        10,
+        4,
+        1,
+        true
+      ]
+    },
+    {
+      "id": 18,
+      "type": "YANC.ConcatStrings",
+      "pos": [
+        780,
+        -2096
+      ],
+      "size": {
+        "0": 315,
+        "1": 106
+      },
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "a_optional",
+          "type": "STRING",
+          "link": 21,
+          "widget": {
+            "name": "a_optional"
+          }
+        },
+        {
+          "name": "b_optional",
+          "type": "STRING",
+          "link": 17,
+          "widget": {
+            "name": "b_optional"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            18
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "YANC.ConcatStrings"
+      },
+      "widgets_values": [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 23,
+      "type": "YANC.ConcatStrings",
+      "pos": [
+        736,
+        -1409
+      ],
+      "size": {
+        "0": 315,
+        "1": 106
+      },
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "a_optional",
+          "type": "STRING",
+          "link": 23,
+          "widget": {
+            "name": "a_optional"
+          }
+        },
+        {
+          "name": "b_optional",
+          "type": "STRING",
+          "link": 22,
+          "widget": {
+            "name": "b_optional"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            24
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "YANC.ConcatStrings"
+      },
+      "widgets_values": [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 25,
+      "type": "IFUnet VFI",
+      "pos": [
+        686,
+        -1132
+      ],
+      "size": {
+        "0": 443.4000244140625,
+        "1": 198
+      },
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "frames",
+          "type": "IMAGE",
+          "link": 29
+        },
+        {
+          "name": "optional_interpolation_states",
+          "type": "INTERPOLATION_STATES",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            30
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "IFUnet VFI"
+      },
+      "widgets_values": [
+        "IFUNet.pth",
+        10,
+        4,
+        1,
+        true,
+        true
+      ]
+    },
+    {
+      "id": 29,
+      "type": "YANC.ConcatStrings",
+      "pos": [
+        663.8054415410611,
+        219.9999847412109
+      ],
+      "size": {
+        "0": 315,
+        "1": 106
+      },
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "a_optional",
+          "type": "STRING",
+          "link": 32,
+          "widget": {
+            "name": "a_optional"
+          }
+        },
+        {
+          "name": "b_optional",
+          "type": "STRING",
+          "link": 33,
+          "widget": {
+            "name": "b_optional"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            34
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "YANC.ConcatStrings"
+      },
+      "widgets_values": [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 30,
+      "type": "YANC.MultilineString",
+      "pos": [
+        110,
+        -30
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            33
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "YANC.MultilineString"
+      },
+      "widgets_values": [
+        "RIFE"
+      ]
+    },
+    {
+      "id": 26,
+      "type": "YANC.MultilineString",
+      "pos": [
+        112,
+        -1034
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            28
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "YANC.MultilineString"
+      },
+      "widgets_values": [
+        "IFUNet"
+      ]
+    },
+    {
+      "id": 27,
+      "type": "YANC.ConcatStrings",
+      "pos": [
+        779,
+        -841
+      ],
+      "size": {
+        "0": 315,
+        "1": 106
+      },
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "a_optional",
+          "type": "STRING",
+          "link": 27,
+          "widget": {
+            "name": "a_optional"
+          }
+        },
+        {
+          "name": "b_optional",
+          "type": "STRING",
+          "link": 28,
+          "widget": {
+            "name": "b_optional"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            31
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "YANC.ConcatStrings"
+      },
+      "widgets_values": [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 31,
+      "type": "YANC.MultilineString",
+      "pos": [
+        66,
+        -569
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            35
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "YANC.MultilineString"
+      },
+      "widgets_values": [
+        "M2M"
+      ]
+    },
+    {
+      "id": 32,
+      "type": "M2M VFI",
+      "pos": [
+        646,
+        -622
+      ],
+      "size": {
+        "0": 443.4000244140625,
+        "1": 150
+      },
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "frames",
+          "type": "IMAGE",
+          "link": 37
+        },
+        {
+          "name": "optional_interpolation_states",
+          "type": "INTERPOLATION_STATES",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            38
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "M2M VFI"
+      },
+      "widgets_values": [
+        "M2M.pth",
+        10,
+        4,
+        true
+      ]
+    },
+    {
+      "id": 33,
+      "type": "YANC.ConcatStrings",
+      "pos": [
+        680,
+        -387
+      ],
+      "size": {
+        "0": 315,
+        "1": 106
+      },
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "a_optional",
+          "type": "STRING",
+          "link": 36,
+          "widget": {
+            "name": "a_optional"
+          }
+        },
+        {
+          "name": "b_optional",
+          "type": "STRING",
+          "link": 35,
+          "widget": {
+            "name": "b_optional"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            39
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "YANC.ConcatStrings"
+      },
+      "widgets_values": [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 2,
+      "type": "RIFE VFI",
+      "pos": [
+        660,
+        -120
+      ],
+      "size": {
+        "0": 443.4000244140625,
+        "1": 222
+      },
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "frames",
+          "type": "IMAGE",
+          "link": 6
+        },
+        {
+          "name": "optional_interpolation_states",
+          "type": "INTERPOLATION_STATES",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            2
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "RIFE VFI"
+      },
+      "widgets_values": [
+        "rife47.pth",
+        10,
+        4,
+        true,
+        true,
+        1,
+        true
+      ]
+    },
+    {
+      "id": 37,
+      "type": "YANC.ConcatStrings",
+      "pos": [
+        694,
+        775
+      ],
+      "size": {
+        "0": 315,
+        "1": 106
+      },
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "a_optional",
+          "type": "STRING",
+          "link": 45,
+          "widget": {
+            "name": "a_optional"
+          }
+        },
+        {
+          "name": "b_optional",
+          "type": "STRING",
+          "link": 44,
+          "widget": {
+            "name": "b_optional"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            46
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "YANC.ConcatStrings"
+      },
+      "widgets_values": [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 35,
+      "type": "FILM VFI",
+      "pos": [
+        655,
+        527
+      ],
+      "size": {
+        "0": 443.4000244140625,
+        "1": 150
+      },
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "frames",
+          "type": "IMAGE",
+          "link": 40
+        },
+        {
+          "name": "optional_interpolation_states",
+          "type": "INTERPOLATION_STATES",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            41
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "FILM VFI"
+      },
+      "widgets_values": [
+        "film_net_fp32.pt",
+        10,
+        4,
+        true
+      ]
+    },
+    {
+      "id": 36,
+      "type": "YANC.MultilineString",
+      "pos": [
+        175,
+        664
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            44
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "YANC.MultilineString"
+      },
+      "widgets_values": [
+        "FILM"
+      ]
+    },
+    {
+      "id": 39,
+      "type": "Sepconv VFI",
+      "pos": [
+        668.6910748953203,
+        1083.0807965670379
+      ],
+      "size": {
+        "0": 443.4000244140625,
+        "1": 150
+      },
+      "flags": {},
+      "order": 24,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "frames",
+          "type": "IMAGE",
+          "link": 49
+        },
+        {
+          "name": "optional_interpolation_states",
+          "type": "INTERPOLATION_STATES",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            50
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Sepconv VFI"
+      },
+      "widgets_values": [
+        "sepconv.pth",
+        10,
+        4,
+        true
+      ]
+    },
+    {
+      "id": 41,
+      "type": "YANC.ConcatStrings",
+      "pos": [
+        723.6910748953203,
+        1303.0807965670379
+      ],
+      "size": {
+        "0": 315,
+        "1": 106
+      },
+      "flags": {},
+      "order": 16,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "a_optional",
+          "type": "STRING",
+          "link": 47,
+          "widget": {
+            "name": "a_optional"
+          }
+        },
+        {
+          "name": "b_optional",
+          "type": "STRING",
+          "link": 48,
+          "widget": {
+            "name": "b_optional"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            51
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "YANC.ConcatStrings"
+      },
+      "widgets_values": [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 44,
+      "type": "YANC.MultilineString",
+      "pos": [
+        192,
+        1672
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            54
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "YANC.MultilineString"
+      },
+      "widgets_values": [
+        "AMT"
+      ]
+    },
+    {
+      "id": 45,
+      "type": "YANC.ConcatStrings",
+      "pos": [
+        739,
+        1867
+      ],
+      "size": {
+        "0": 315,
+        "1": 106
+      },
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "a_optional",
+          "type": "STRING",
+          "link": 53,
+          "widget": {
+            "name": "a_optional"
+          }
+        },
+        {
+          "name": "b_optional",
+          "type": "STRING",
+          "link": 54,
+          "widget": {
+            "name": "b_optional"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            56
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "YANC.ConcatStrings"
+      },
+      "widgets_values": [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 43,
+      "type": "AMT VFI",
+      "pos": [
+        660,
+        1591
+      ],
+      "size": {
+        "0": 443.4000244140625,
+        "1": 150
+      },
+      "flags": {},
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "frames",
+          "type": "IMAGE",
+          "link": 52
+        },
+        {
+          "name": "optional_interpolation_states",
+          "type": "INTERPOLATION_STATES",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            55
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "AMT VFI"
+      },
+      "widgets_values": [
+        "amt-s.pth",
+        1,
+        4,
+        true
+      ]
+    },
+    {
+      "id": 22,
+      "type": "YANC.MultilineString",
+      "pos": [
+        74,
+        -1590
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            22
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "YANC.MultilineString"
+      },
+      "widgets_values": [
+        "IFRNet"
+      ]
+    },
+    {
+      "id": 19,
+      "type": "YANC.MultilineString",
+      "pos": [
+        129,
+        -2188
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            17
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "YANC.MultilineString"
+      },
+      "widgets_values": [
+        "GMFSS"
+      ]
+    },
+    {
+      "id": 42,
+      "type": "SaveImage",
+      "pos": [
+        1185.6910748953203,
+        1263.0807965670379
+      ],
+      "size": {
+        "0": 315,
+        "1": 270
+      },
+      "flags": {},
+      "order": 32,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 50
+        },
+        {
+          "name": "filename_prefix",
+          "type": "STRING",
+          "link": 51,
+          "widget": {
+            "name": "filename_prefix"
+          }
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        "VFI-comparison/4/RIFE"
+      ]
+    },
+    {
+      "id": 40,
+      "type": "YANC.MultilineString",
+      "pos": [
+        231.6910748953203,
+        1176.0807965670379
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {},
+      "order": 7,
+      "mode": 4,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            48
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "YANC.MultilineString"
+      },
+      "widgets_values": [
+        "Sepconv"
+      ]
+    },
+    {
+      "id": 14,
+      "type": "SaveImage",
+      "pos": [
+        1244,
+        -2262
+      ],
+      "size": {
+        "0": 315,
+        "1": 270
+      },
+      "flags": {},
+      "order": 27,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 11
+        },
+        {
+          "name": "filename_prefix",
+          "type": "STRING",
+          "link": 18,
+          "widget": {
+            "name": "filename_prefix"
+          }
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        "VFI-comparison/4/GMFSS"
+      ]
+    },
+    {
+      "id": 17,
+      "type": "SaveImage",
+      "pos": [
+        1275,
+        -1621
+      ],
+      "size": {
+        "0": 315,
+        "1": 270
+      },
+      "flags": {},
+      "order": 28,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 14
+        },
+        {
+          "name": "filename_prefix",
+          "type": "STRING",
+          "link": 24,
+          "widget": {
+            "name": "filename_prefix"
+          }
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        "VFI-comparison/4/RIFE"
+      ]
+    },
+    {
+      "id": 28,
+      "type": "SaveImage",
+      "pos": [
+        1217,
+        -1087
+      ],
+      "size": {
+        "0": 315,
+        "1": 270
+      },
+      "flags": {},
+      "order": 29,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 30
+        },
+        {
+          "name": "filename_prefix",
+          "type": "STRING",
+          "link": 31,
+          "widget": {
+            "name": "filename_prefix"
+          }
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        "VFI-comparison/4/RIFE"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "SaveImage",
+      "pos": [
+        1204,
+        10
+      ],
+      "size": {
+        "0": 315,
+        "1": 270
+      },
+      "flags": {},
+      "order": 26,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 2
+        },
+        {
+          "name": "filename_prefix",
+          "type": "STRING",
+          "link": 34,
+          "widget": {
+            "name": "filename_prefix"
+          }
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        "VFI-comparison/4/RIFE"
+      ]
+    },
+    {
+      "id": 34,
+      "type": "SaveImage",
+      "pos": [
+        1214,
+        -587
+      ],
+      "size": {
+        "0": 315,
+        "1": 270
+      },
+      "flags": {},
+      "order": 30,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 38
+        },
+        {
+          "name": "filename_prefix",
+          "type": "STRING",
+          "link": 39,
+          "widget": {
+            "name": "filename_prefix"
+          }
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        "VFI-comparison/4/RIFE"
+      ]
+    },
+    {
+      "id": 38,
+      "type": "SaveImage",
+      "pos": [
+        1209,
+        616
+      ],
+      "size": {
+        "0": 315,
+        "1": 270
+      },
+      "flags": {},
+      "order": 31,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 41
+        },
+        {
+          "name": "filename_prefix",
+          "type": "STRING",
+          "link": 46,
+          "widget": {
+            "name": "filename_prefix"
+          }
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        "VFI-comparison/4/RIFE"
+      ]
+    },
+    {
+      "id": 46,
+      "type": "SaveImage",
+      "pos": [
+        1186,
+        1685
+      ],
+      "size": {
+        "0": 315,
+        "1": 270
+      },
+      "flags": {},
+      "order": 33,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 55
+        },
+        {
+          "name": "filename_prefix",
+          "type": "STRING",
+          "link": 56,
+          "widget": {
+            "name": "filename_prefix"
+          }
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        "VFI-comparison/4/RIFE"
+      ]
+    },
+    {
+      "id": 21,
+      "type": "YANC.MultilineString",
+      "pos": [
+        -896,
+        836
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            21,
+            23,
+            27,
+            32,
+            36,
+            45,
+            47,
+            53
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "YANC.MultilineString"
+      },
+      "widgets_values": [
+        "VFI-comparison/eishockey2/"
+      ]
+    },
+    {
+      "id": 8,
+      "type": "LoadImage",
+      "pos": [
+        -837,
+        1105
+      ],
+      "size": {
+        "0": 315,
+        "1": 314
+      },
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            6,
+            9,
+            12,
+            29,
+            37,
+            40,
+            49,
+            52
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "eishockey2.webp",
+        "image"
+      ]
+    }
+  ],
+  "links": [
+    [
+      2,
+      2,
+      0,
+      3,
+      0,
+      "IMAGE"
+    ],
+    [
+      6,
+      8,
+      0,
+      2,
+      0,
+      "IMAGE"
+    ],
+    [
+      9,
+      8,
+      0,
+      11,
+      0,
+      "IMAGE"
+    ],
+    [
+      11,
+      11,
+      0,
+      14,
+      0,
+      "IMAGE"
+    ],
+    [
+      12,
+      8,
+      0,
+      15,
+      0,
+      "IMAGE"
+    ],
+    [
+      14,
+      15,
+      0,
+      17,
+      0,
+      "IMAGE"
+    ],
+    [
+      17,
+      19,
+      0,
+      18,
+      1,
+      "STRING"
+    ],
+    [
+      18,
+      18,
+      0,
+      14,
+      1,
+      "STRING"
+    ],
+    [
+      21,
+      21,
+      0,
+      18,
+      0,
+      "STRING"
+    ],
+    [
+      22,
+      22,
+      0,
+      23,
+      1,
+      "STRING"
+    ],
+    [
+      23,
+      21,
+      0,
+      23,
+      0,
+      "STRING"
+    ],
+    [
+      24,
+      23,
+      0,
+      17,
+      1,
+      "STRING"
+    ],
+    [
+      27,
+      21,
+      0,
+      27,
+      0,
+      "STRING"
+    ],
+    [
+      28,
+      26,
+      0,
+      27,
+      1,
+      "STRING"
+    ],
+    [
+      29,
+      8,
+      0,
+      25,
+      0,
+      "IMAGE"
+    ],
+    [
+      30,
+      25,
+      0,
+      28,
+      0,
+      "IMAGE"
+    ],
+    [
+      31,
+      27,
+      0,
+      28,
+      1,
+      "STRING"
+    ],
+    [
+      32,
+      21,
+      0,
+      29,
+      0,
+      "STRING"
+    ],
+    [
+      33,
+      30,
+      0,
+      29,
+      1,
+      "STRING"
+    ],
+    [
+      34,
+      29,
+      0,
+      3,
+      1,
+      "STRING"
+    ],
+    [
+      35,
+      31,
+      0,
+      33,
+      1,
+      "STRING"
+    ],
+    [
+      36,
+      21,
+      0,
+      33,
+      0,
+      "STRING"
+    ],
+    [
+      37,
+      8,
+      0,
+      32,
+      0,
+      "IMAGE"
+    ],
+    [
+      38,
+      32,
+      0,
+      34,
+      0,
+      "IMAGE"
+    ],
+    [
+      39,
+      33,
+      0,
+      34,
+      1,
+      "STRING"
+    ],
+    [
+      40,
+      8,
+      0,
+      35,
+      0,
+      "IMAGE"
+    ],
+    [
+      41,
+      35,
+      0,
+      38,
+      0,
+      "IMAGE"
+    ],
+    [
+      44,
+      36,
+      0,
+      37,
+      1,
+      "STRING"
+    ],
+    [
+      45,
+      21,
+      0,
+      37,
+      0,
+      "STRING"
+    ],
+    [
+      46,
+      37,
+      0,
+      38,
+      1,
+      "STRING"
+    ],
+    [
+      47,
+      21,
+      0,
+      41,
+      0,
+      "STRING"
+    ],
+    [
+      48,
+      40,
+      0,
+      41,
+      1,
+      "STRING"
+    ],
+    [
+      49,
+      8,
+      0,
+      39,
+      0,
+      "IMAGE"
+    ],
+    [
+      50,
+      39,
+      0,
+      42,
+      0,
+      "IMAGE"
+    ],
+    [
+      51,
+      41,
+      0,
+      42,
+      1,
+      "STRING"
+    ],
+    [
+      52,
+      8,
+      0,
+      43,
+      0,
+      "IMAGE"
+    ],
+    [
+      53,
+      21,
+      0,
+      45,
+      0,
+      "STRING"
+    ],
+    [
+      54,
+      44,
+      0,
+      45,
+      1,
+      "STRING"
+    ],
+    [
+      55,
+      43,
+      0,
+      46,
+      0,
+      "IMAGE"
+    ],
+    [
+      56,
+      45,
+      0,
+      46,
+      1,
+      "STRING"
+    ]
+  ],
+  "groups": [
+    {
+      "title": "Group",
+      "bounding": [
+        142,
+        1013,
+        1403,
+        486
+      ],
+      "color": "#3f789e",
+      "font_size": 24
+    }
+  ],
+  "config": {},
+  "extra": {},
+  "version": 0.4
+}
